@@ -90,26 +90,12 @@ class Nav extends React.PureComponent {
             }
           })()}
           <li className="nav__item">
-            <p className="nav__open">
-              <Link to="/p5/sketches">
-                Examples
-              </Link>
-            </p>
-          </li>
-          <li className="nav__item">
             <p className="nav__reference">
               <a
                 href="https://p5js.org/reference/"
                 target="_blank"
                 rel="noopener noreferrer"
               >Reference</a>
-            </p>
-          </li>
-          <li className="nav__item">
-            <p className="nav__about">
-              <Link to="/about">
-                About
-              </Link>
             </p>
           </li>
         </ul>
@@ -152,9 +138,7 @@ class Nav extends React.PureComponent {
           })()}
         </ul>
         <div className="nav__announce">
-          This is a preview version of the editor, that has not yet been officially released. It is in development, you can report bugs
-          <a href="https://github.com/processing/p5.js-web-editor/issues" target="_blank" rel="noopener noreferrer">here</a>.
-          Please use with caution.
+        Hello,CodingMonkeys! Welcome to your text-coding playground
         </div>
       </nav>
     );

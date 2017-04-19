@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import InlineSVG from 'react-inlinesvg';
 
 const playUrl = require('../../../images/play.svg');
-const logoUrl = require('../../../images/p5js-logo.svg');
+const logoUrl = require('../../../images/logo.svg');
 const stopUrl = require('../../../images/stop.svg');
 const preferencesUrl = require('../../../images/preferences.svg');
 const editProjectNameUrl = require('../../../images/pencil.svg');

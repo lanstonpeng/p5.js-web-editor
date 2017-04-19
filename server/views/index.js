@@ -11,6 +11,21 @@ export function renderIndex() {
       <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
       <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
       <link rel='shortcut icon' href='https://raw.githubusercontent.com/processing/p5.js-website-OLD/master/favicon.ico' type='image/x-icon'/ >
+      <script type='text/javascript'>
+        var _vds = _vds || [];
+        window._vds = _vds;
+        (function(){
+          _vds.push(['setAccountId', '8914248c7189ecb9']);
+          (function() {
+            var vds = document.createElement('script');
+            vds.type='text/javascript';
+            vds.async = true;
+            vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(vds, s);
+          })();
+        })();
+      </script>
     </head>
     <body>
       <div id="root" class="root-app">
@@ -21,18 +36,8 @@ export function renderIndex() {
           window.webpackManifest = ${JSON.stringify(chunkManifest)};
           //]]>` : ''}
         </script>
-        <script src='${process.env.NODE_ENV === 'production' ? `/dist/${assetsManifest['/vendor.js']}` : '/dist/vendor.js'}'></script>
-        <script src='${process.env.NODE_ENV === 'production' ? `/dist/${assetsManifest['/app.js']}` : '/dist/app.js'}'></script>
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-53383000-1', 'auto');
-          ga('send', 'pageview');
-
-        </script>
+        <script src='${process.env.NODE_ENV === 'production' ? `/dist${assetsManifest['/vendor.js']}` : '/dist/vendor.js'}'></script>
+        <script src='${process.env.NODE_ENV === 'production' ? `/dist${assetsManifest['/app.js']}` : '/dist/app.js'}'></script>
     </body>
   </html>
   `;
