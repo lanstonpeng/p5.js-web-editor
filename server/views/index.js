@@ -6,7 +6,7 @@ export function renderIndex() {
   <!DOCTYPE html>
   <html>
     <head>
-      <title>p5.js Web Editor</title>
+      <title>CodingMonkey p5.js Web Editor</title>
       ${process.env.NODE_ENV === 'production' ? `<link rel='stylesheet' href='/dist/${assetsManifest['/app.css']}' />` : ''}
       <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
       <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
