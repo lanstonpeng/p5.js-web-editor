@@ -38,6 +38,20 @@ export function renderIndex() {
         </script>
         <script src='${process.env.NODE_ENV === 'production' ? `/dist${assetsManifest['/vendor.js']}` : '/dist/vendor.js'}'></script>
         <script src='${process.env.NODE_ENV === 'production' ? `/dist${assetsManifest['/app.js']}` : '/dist/app.js'}'></script>
+    	<script type='text/javascript'>
+	    (function(m, ei, q, i, a, j, s) {
+	        m[i] = m[i] || function() {
+	            (m[i].a = m[i].a || []).push(arguments)
+	        };
+	        j = ei.createElement(q),
+	            s = ei.getElementsByTagName(q)[0];
+	        j.async = true;
+	        j.charset = 'UTF-8';
+	        j.src = '//static.meiqia.com/dist/meiqia.js';
+	        s.parentNode.insertBefore(j, s);
+	    })(window, document, 'script', '_MEIQIA');
+	    _MEIQIA('entId', 55634);
+	</script>
     </body>
   </html>
   `;
