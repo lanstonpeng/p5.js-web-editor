@@ -162,6 +162,7 @@ class PreviewFrame extends React.Component {
     this.resolveStyles(sketchDoc, resolvedFiles);
 
     let scriptsToInject = [
+      '/showMouseCoordinates.js',
       '/loop-protect.min.js',
       '/hijackConsole.js'
     ];
